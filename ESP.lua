@@ -12,7 +12,7 @@ if not EspSettings then
 	getgenv().EspSettings = {
 		TeamCheck = false,
 		ToggleKey = "RightAlt",
-		RefreshRate = 1, -- how fast the esp updates (milliseconds)
+		RefreshRate = 10, -- how fast the esp updates (milliseconds)
 		MaximumDistance = 5000, -- only renders players within this distance
 		FaceCamera = true, -- Makes esp appear 2D
 		AlignPoints = false, -- Improves 2D effect; only works while FaceCamera is enabled
