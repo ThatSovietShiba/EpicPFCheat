@@ -79,12 +79,12 @@ if not EspSettings then
 			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
-			UseTeamColor = true,
+			UseTeamColor = false,
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
 			Font = Drawing.Fonts.UI, -- UI or System or Plex or Monospace
-			Size = 18,
+			Size = 13,
 			ShowDistance = false,
 			ShowHealth = true,
 			UseDisplayName = false,
@@ -106,12 +106,12 @@ if not EspSettings then
 			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(0,255,0),
-			UseTeamColor = true,
+			UseTeamColor = false,
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 3,
-			Origin = "None", -- "None" or "Left" or "Right"
+			OutlineThickness = 1,
+			Origin = "Left", -- "None" or "Left" or "Right"
 			OutlineBarOnly = true
 		},
 		HeadDots = {
