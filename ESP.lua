@@ -11,11 +11,11 @@ local VERSION = "v1.6.12"
 if not EspSettings then
 	getgenv().EspSettings = {
 		TeamCheck = false,
-		ToggleKey = "F24",
+		ToggleKey = "",
 		RefreshRate = 10, -- how fast the esp updates (milliseconds)
 		MaximumDistance = 5000, -- only renders players within this distance
 		FaceCamera = true, -- Makes esp appear 2D
-		AlignPoints = false, -- Improves 2D effect; only works while FaceCamera is enabled
+		AlignPoints = true, -- Improves 2D effect; only works while FaceCamera is enabled
 		-- AlignPoints: This may cause esp to have abnormal behavior when looking from certain angles
 		MouseVisibility = {
 			Enabled = true, -- makes any drawing objects transparent when they are near your mouse
@@ -53,7 +53,7 @@ if not EspSettings then
 			}
 		},
 		Boxes = {
-			Enabled = true,
+			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
@@ -72,7 +72,7 @@ if not EspSettings then
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
 			OutlineThickness = 3,
-			Origin = "Bottom", -- "Top" or "Center" or "Bottom" or "Mouse"
+			Origin = "Top", -- "Top" or "Center" or "Bottom" or "Mouse"
 			Thickness = 1
 		},
 		Names = {
@@ -84,7 +84,7 @@ if not EspSettings then
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
 			Font = Drawing.Fonts.UI, -- UI or System or Plex or Monospace
-			Size = 13,
+			Size = 18,
 			ShowDistance = false,
 			ShowHealth = true,
 			UseDisplayName = false,
@@ -110,8 +110,8 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 1,
-			Origin = "Left", -- "None" or "Left" or "Right"
+			OutlineThickness = 3,
+			Origin = "None", -- "None" or "Left" or "Right"
 			OutlineBarOnly = true
 		},
 		HeadDots = {
@@ -122,10 +122,10 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 1,
+			OutlineThickness = 3,
 			Thickness = 1,
 			Filled = false,
-			Scale = 0.7
+			Scale = 1
 		},
 		LookTracers = {
 			Enabled = false,
@@ -367,7 +367,7 @@ function GetTeam(plr)
 	return plr.Team
 end
 
-function GetTeamColor()
+function GetTeamColor(plr)
 	if plr.ClassName == "Model" then
 		return npcs.Color
 	end
