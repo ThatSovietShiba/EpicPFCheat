@@ -11,7 +11,7 @@ local VERSION = "v1.6.12"
 if not EspSettings then
 	getgenv().EspSettings = {
 		TeamCheck = false,
-		ToggleKey = "",
+		ToggleKey = "RightAlt",
 		RefreshRate = 10, -- how fast the esp updates (milliseconds)
 		MaximumDistance = 5000, -- only renders players within this distance
 		FaceCamera = true, -- Makes esp appear 2D
@@ -53,7 +53,7 @@ if not EspSettings then
 			}
 		},
 		Boxes = {
-			Enabled = false,
+			Enabled = true,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
