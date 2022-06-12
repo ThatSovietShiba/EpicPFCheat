@@ -53,7 +53,7 @@ if not EspSettings then
 			}
 		},
 		Boxes = {
-			Enabled = false,
+			Enabled = true,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
