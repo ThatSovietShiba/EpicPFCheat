@@ -367,7 +367,7 @@ function GetTeam(plr)
 	return plr.Team
 end
 
-function GetTeamColor(plr)
+function GetTeamColor()
 	if plr.ClassName == "Model" then
 		return npcs.Color
 	end
