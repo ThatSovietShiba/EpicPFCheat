@@ -10,7 +10,7 @@ local VERSION = "v1.6.12"
 
 if not EspSettings then
 	getgenv().EspSettings = {
-		TeamCheck = true,
+		TeamCheck = false,
 		ToggleKey = "",
 		RefreshRate = 10, -- how fast the esp updates (milliseconds)
 		MaximumDistance = 5000, -- only renders players within this distance
