@@ -122,10 +122,10 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 3,
+			OutlineThickness = 1,
 			Thickness = 1,
 			Filled = false,
-			Scale = 1
+			Scale = 0.7
 		},
 		LookTracers = {
 			Enabled = false,
