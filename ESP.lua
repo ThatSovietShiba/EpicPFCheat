@@ -15,7 +15,7 @@ if not EspSettings then
 		RefreshRate = 10, -- how fast the esp updates (milliseconds)
 		MaximumDistance = 5000, -- only renders players within this distance
 		FaceCamera = true, -- Makes esp appear 2D
-		AlignPoints = true, -- Improves 2D effect; only works while FaceCamera is enabled
+		AlignPoints = false, -- Improves 2D effect; only works while FaceCamera is enabled
 		-- AlignPoints: This may cause esp to have abnormal behavior when looking from certain angles
 		MouseVisibility = {
 			Enabled = true, -- makes any drawing objects transparent when they are near your mouse
@@ -64,7 +64,7 @@ if not EspSettings then
 			Thickness = 1
 		},
 		Tracers = {
-			Enabled = false,
+			Enabled = true,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
@@ -76,7 +76,7 @@ if not EspSettings then
 			Thickness = 1
 		},
 		Names = {
-			Enabled = false,
+			Enabled = true,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = false,
@@ -92,7 +92,7 @@ if not EspSettings then
 			HealthDataType = "Percentage" -- "Percentage" or "Value"
 		},
 		Skeletons = {
-			Enabled = false,
+			Enabled = true,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
@@ -103,7 +103,7 @@ if not EspSettings then
 			Thickness = 1
 		},
 		HealthBars = {
-			Enabled = false,
+			Enabled = true,
 			Transparency = 1,
 			Color = Color3.fromRGB(0,255,0),
 			UseTeamColor = false,
@@ -115,7 +115,7 @@ if not EspSettings then
 			OutlineBarOnly = true
 		},
 		HeadDots = {
-			Enabled = false,
+			Enabled = true,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
@@ -123,12 +123,12 @@ if not EspSettings then
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
 			OutlineThickness = 3,
-			Thickness = 1,
+			Thickness = 0.7,
 			Filled = false,
-			Scale = 1
+			Scale = 0.5
 		},
 		LookTracers = {
-			Enabled = false,
+			Enabled = true,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
