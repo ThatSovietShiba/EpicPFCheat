@@ -53,7 +53,7 @@ if not EspSettings then
 			}
 		},
 		Boxes = {
-			Enabled = true,
+			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
@@ -64,7 +64,7 @@ if not EspSettings then
 			Thickness = 1
 		},
 		Tracers = {
-			Enabled = true,
+			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
@@ -76,7 +76,7 @@ if not EspSettings then
 			Thickness = 1
 		},
 		Names = {
-			Enabled = true,
+			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = false,
@@ -92,7 +92,7 @@ if not EspSettings then
 			HealthDataType = "Percentage" -- "Percentage" or "Value"
 		},
 		Skeletons = {
-			Enabled = true,
+			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
@@ -103,7 +103,7 @@ if not EspSettings then
 			Thickness = 1
 		},
 		HealthBars = {
-			Enabled = true,
+			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(0,255,0),
 			UseTeamColor = false,
@@ -115,7 +115,7 @@ if not EspSettings then
 			OutlineBarOnly = true
 		},
 		HeadDots = {
-			Enabled = true,
+			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
@@ -128,7 +128,7 @@ if not EspSettings then
 			Scale = 0.5
 		},
 		LookTracers = {
-			Enabled = true,
+			Enabled = false,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
 			UseTeamColor = true,
