@@ -12,7 +12,7 @@ local EspLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Th
 
 --menu
 local Window = Library:CreateWindow({
-    Title = 'PastedHub V0.1.1',
+    Title = 'PastedHub V0.1.1a',
     Center = false, 
     AutoShow = true,
 })
