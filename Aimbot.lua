@@ -31,7 +31,7 @@ if not getgenv().AimbotSettings then
 			MaxFov = 300,
 			DynamicFov = false,
 			ShowFov = false, -- Shows Min & Max fov
-			Strength = 100, -- 1% - 100%
+			Strength = 200, -- 1% - 100%
 			SlowSensitivity = false,
 			SlowFactor = 1.75, -- 1% - 10%
 			RequireMovement = false
