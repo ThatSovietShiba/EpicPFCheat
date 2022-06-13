@@ -60,7 +60,7 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 3,
+			OutlineThickness = 1,
 			Thickness = 1
 		},
 		Tracers = {
@@ -71,7 +71,7 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 3,
+			OutlineThickness = 1,
 			Origin = "Bottom", -- "Top" or "Center" or "Bottom" or "Mouse"
 			Thickness = 1
 		},
@@ -84,7 +84,7 @@ if not EspSettings then
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
 			Font = Drawing.Fonts.UI, -- UI or System or Plex or Monospace
-			Size = 18,
+			Size = 13,
 			ShowDistance = false,
 			ShowHealth = true,
 			UseDisplayName = false,
@@ -99,7 +99,7 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 3,
+			OutlineThickness = 1,
 			Thickness = 1
 		},
 		HealthBars = {
@@ -110,7 +110,7 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 3,
+			OutlineThickness = 1,
 			Origin = "None", -- "None" or "Left" or "Right"
 			OutlineBarOnly = true
 		},
@@ -122,7 +122,7 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 3,
+			OutlineThickness = 1,
 			Thickness = 0.7,
 			Filled = false,
 			Scale = 0.5
@@ -135,8 +135,8 @@ if not EspSettings then
 			RainbowColor = false,
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
-			OutlineThickness = 3,
-			Thickness = 1,
+			OutlineThickness = 1,
+			Thickness = 0.5,
 			Length = 5
 		}
 	}
