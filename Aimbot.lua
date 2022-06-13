@@ -27,8 +27,8 @@ if not getgenv().AimbotSettings then
 		},
 		AimAssist = {
 			Enabled = false,
-			MinFov = 15,
-			MaxFov = 80,
+			MinFov = 0,
+			MaxFov = 300,
 			DynamicFov = false,
 			ShowFov = false, -- Shows Min & Max fov
 			Strength = 100, -- 1% - 100%
