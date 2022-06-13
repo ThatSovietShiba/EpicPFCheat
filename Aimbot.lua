@@ -38,7 +38,7 @@ if not getgenv().AimbotSettings then
 		},
 		FovCircle = {
 			Enabled = true,
-			Dynamic = true,
+			Dynamic = false,
 			Radius = 300,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
