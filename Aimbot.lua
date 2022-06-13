@@ -14,7 +14,7 @@ if not getgenv().AimbotSettings then
 		IgnoreTransparency = true, -- if enabled, visible check will automatically filter transparent objects
 		IgnoredTransparency = 0.5, -- all parts with a transparency greater than this will be ignored (IgnoreTransparency has to be enabled)
 		RefreshRate = 10, -- how fast the aimbot updates (milliseconds)
-		Keybind = "LeftAlt",
+		Keybind = "MouseButton2",
 		ToggleKey = "",
 		MaximumDistance = 3000, -- Set this to something lower if you dont wanna lock on some random person across the map
 		AlwaysActive = false,
@@ -26,15 +26,15 @@ if not getgenv().AimbotSettings then
 			AimType = "Hold", -- "Hold" or "Toggle"
 		},
 		AimAssist = {
-			Enabled = false,
+			Enabled = true,
 			MinFov = 15,
 			MaxFov = 80,
-			DynamicFov = true,
+			DynamicFov = false,
 			ShowFov = false, -- Shows Min & Max fov
-			Strength = 55, -- 1% - 100%
-			SlowSensitivity = true,
+			Strength = 100, -- 1% - 100%
+			SlowSensitivity = false,
 			SlowFactor = 1.75, -- 1% - 10%
-			RequireMovement = true
+			RequireMovement = false
 		},
 		FovCircle = {
 			Enabled = true,
