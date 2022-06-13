@@ -19,14 +19,14 @@ if not getgenv().AimbotSettings then
 		MaximumDistance = 3000, -- Set this to something lower if you dont wanna lock on some random person across the map
 		AlwaysActive = false,
 		Aimbot = {
-			Enabled = false,
+			Enabled = true,
 			TargetPart = "Head",
 			Use_mousemoverel = true,
 			Strength = 100, -- 1% - 200%
 			AimType = "Hold", -- "Hold" or "Toggle"
 		},
 		AimAssist = {
-			Enabled = true,
+			Enabled = false,
 			MinFov = 0,
 			MaxFov = 300,
 			DynamicFov = false,
