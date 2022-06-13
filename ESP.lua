@@ -72,7 +72,7 @@ if not EspSettings then
 			Outline = true,
 			OutlineColor = Color3.fromRGB(0,0,0),
 			OutlineThickness = 3,
-			Origin = "Top", -- "Top" or "Center" or "Bottom" or "Mouse"
+			Origin = "Bottom", -- "Top" or "Center" or "Bottom" or "Mouse"
 			Thickness = 1
 		},
 		Names = {
