@@ -15,7 +15,7 @@ if not getgenv().AimbotSettings then
 		IgnoredTransparency = 0.5, -- all parts with a transparency greater than this will be ignored (IgnoreTransparency has to be enabled)
 		RefreshRate = 10, -- how fast the aimbot updates (milliseconds)
 		Keybind = "MouseButton2",
-		ToggleKey = "p",
+		ToggleKey = "P",
 		MaximumDistance = 3000, -- Set this to something lower if you dont wanna lock on some random person across the map
 		AlwaysActive = false,
 		Aimbot = {
