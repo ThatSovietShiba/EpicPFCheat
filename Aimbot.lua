@@ -19,7 +19,7 @@ if not getgenv().AimbotSettings then
 		MaximumDistance = 3000, -- Set this to something lower if you dont wanna lock on some random person across the map
 		AlwaysActive = false,
 		Aimbot = {
-			Enabled = true,
+			Enabled = false,
 			TargetPart = "Head",
 			Use_mousemoverel = true,
 			Strength = 100, -- 1% - 200%
@@ -37,7 +37,7 @@ if not getgenv().AimbotSettings then
 			RequireMovement = false
 		},
 		FovCircle = {
-			Enabled = true,
+			Enabled = false,
 			Dynamic = false,
 			Radius = 300,
 			Transparency = 1,
@@ -45,7 +45,7 @@ if not getgenv().AimbotSettings then
 			NumSides = 64,
 		},
 		TriggerBot = {
-			Enabled = true,
+			Enabled = false,
 			Delay = 10, -- how long it waits before clicking (milliseconds)
 			Spam = true, -- for semi-auto weapons
 			ClicksPerSecond = 10 -- set this to 0 to get anything higher than 37 cps
