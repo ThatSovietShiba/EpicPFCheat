@@ -17,7 +17,7 @@ if not getgenv().AimbotSettings then
 		Keybind = "MouseButton2",
 		ToggleKey = "",
 		MaximumDistance = 3000, -- Set this to something lower if you dont wanna lock on some random person across the map
-		AlwaysActive = false,
+		AlwaysActive = true,
 		Aimbot = {
 			Enabled = true,
 			TargetPart = "Head",
