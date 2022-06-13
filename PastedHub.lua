@@ -21,7 +21,7 @@ local Tabs = {
     Visuals = Window:AddTab('Visuals'),
     --Player = Window:AddTab('Player'),
     Misc = Window:AddTab('Misc'),
-    ['UI Settings'] = Window:AddTab('UI Settings'),
+    ['UI Settings'] = Window:AddTab('Configs and Themes'),
 }
 
 local ESPGroup = Tabs.Visuals:AddLeftGroupbox('ESP')
@@ -251,6 +251,39 @@ Toggles.JumpToggle:OnChanged(function()
 end)]]
 
 
+--extra shit
+Library:SetWatermarkVisibility(true)
+
+Library:SetWatermark('PastedHub')
+
+local MenuGroup = Tabs['UI Settings']:AddLeftGroupbox('Menu')
+
+MenuGroup:AddButton('Unload', function() Library:Unload() end)
+MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = 'RightShift', NoUI = true, Text = 'Menu keybind' }) 
+
+Library.ToggleKeybind = Options.MenuKeybind
+
+
+ThemeManager:SetLibrary(Library)
+SaveManager:SetLibrary(Library)
+
+
+SaveManager:IgnoreThemeSettings() 
+
+
+SaveManager:SetIgnoreIndexes({ 'MenuKeybind' })
+
+
+ThemeManager:SetFolder('MyScriptHub')
+SaveManager:SetFolder('MyScriptHub/specific-game')
+
+
+SaveManager:BuildConfigSection(Tabs['UI Settings']) 
+
+
+ThemeManager:ApplyToTab(Tabs['UI Settings'])
+
+
 --misc
 local AutoDeploy = false
 Toggles.DeployToggle:OnChanged(function()
@@ -309,39 +342,3 @@ Toggles.DeployToggle:OnChanged(function()
         end;
     end
 end)
-
-
-
-
-
---extra shit
-Library:SetWatermarkVisibility(true)
-
-Library:SetWatermark('PastedHub')
-
-local MenuGroup = Tabs['UI Settings']:AddLeftGroupbox('Menu')
-
-MenuGroup:AddButton('Unload', function() Library:Unload() end)
-MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = 'RightShift', NoUI = true, Text = 'Menu keybind' }) 
-
-Library.ToggleKeybind = Options.MenuKeybind
-
-
-ThemeManager:SetLibrary(Library)
-SaveManager:SetLibrary(Library)
-
-
-SaveManager:IgnoreThemeSettings() 
-
-
-SaveManager:SetIgnoreIndexes({ 'MenuKeybind' })
-
-
-ThemeManager:SetFolder('MyScriptHub')
-SaveManager:SetFolder('MyScriptHub/specific-game')
-
-
-SaveManager:BuildConfigSection(Tabs['UI Settings']) 
-
-
-ThemeManager:ApplyToTab(Tabs['UI Settings'])
