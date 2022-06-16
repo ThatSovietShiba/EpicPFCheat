@@ -22,19 +22,19 @@ if not getgenv().AimbotSettings then
 			Enabled = true,
 			TargetPart = "Head",
 			Use_mousemoverel = true,
-			Strength = 200, -- 1% - 200%
+			Strength = 100, -- 1% - 200%
 			AimType = "Hold", -- "Hold" or "Toggle"
 		},
 		AimAssist = {
 			Enabled = false,
-			MinFov = 0,
-			MaxFov = 300,
-			DynamicFov = false,
+			MinFov = 15,
+			MaxFov = 80,
+			DynamicFov = true,
 			ShowFov = false, -- Shows Min & Max fov
-			Strength = 100, -- 1% - 100%
-			SlowSensitivity = false,
+			Strength = 55, -- 1% - 100%
+			SlowSensitivity = true,
 			SlowFactor = 1.75, -- 1% - 10%
-			RequireMovement = false
+			RequireMovement = true
 		},
 		FovCircle = {
 			Enabled = true,
@@ -45,7 +45,7 @@ if not getgenv().AimbotSettings then
 			NumSides = 64,
 		},
 		TriggerBot = {
-			Enabled = true,
+			Enabled = false,
 			Delay = 10, -- how long it waits before clicking (milliseconds)
 			Spam = true, -- for semi-auto weapons
 			ClicksPerSecond = 10 -- set this to 0 to get anything higher than 37 cps
@@ -484,7 +484,7 @@ function update()
 		ss.VisibleCheck = false
 	end
 	if FovCircle.Enabled then
-		fov.Position = mouse 
+		fov.Position = mouse
 		fov.NumSides = FovCircle.NumSides
 		fov.Radius = FovCircle.Radius
 		fov.Transparency = FovCircle.Transparency
