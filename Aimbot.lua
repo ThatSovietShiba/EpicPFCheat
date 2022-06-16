@@ -45,7 +45,7 @@ if not getgenv().AimbotSettings then
 			NumSides = 64,
 		},
 		TriggerBot = {
-			Enabled = false,
+			Enabled = true,
 			Delay = 10, -- how long it waits before clicking (milliseconds)
 			Spam = true, -- for semi-auto weapons
 			ClicksPerSecond = 10 -- set this to 0 to get anything higher than 37 cps
