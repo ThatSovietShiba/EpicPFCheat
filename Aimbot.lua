@@ -15,22 +15,22 @@ if not getgenv().AimbotSettings then
 		IgnoredTransparency = 0.5, -- all parts with a transparency greater than this will be ignored (IgnoreTransparency has to be enabled)
 		RefreshRate = 10, -- how fast the aimbot updates (milliseconds)
 		Keybind = "MouseButton2",
-		ToggleKey = "p",
+		ToggleKey = "",
 		MaximumDistance = 3000, -- Set this to something lower if you dont wanna lock on some random person across the map
 		AlwaysActive = false,
 		Aimbot = {
 			Enabled = true,
 			TargetPart = "Head",
 			Use_mousemoverel = true,
-			Strength = 100, -- 1% - 200%
+			Strength = 200, -- 1% - 200%
 			AimType = "Hold", -- "Hold" or "Toggle"
 		},
 		AimAssist = {
-			Enabled = true,
+			Enabled = false,
 			MinFov = 0,
 			MaxFov = 300,
 			DynamicFov = false,
-			ShowFov = true, -- Shows Min & Max fov
+			ShowFov = false, -- Shows Min & Max fov
 			Strength = 100, -- 1% - 100%
 			SlowSensitivity = false,
 			SlowFactor = 1.75, -- 1% - 10%
