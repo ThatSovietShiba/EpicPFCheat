@@ -484,7 +484,7 @@ function update()
 		ss.VisibleCheck = false
 	end
 	if FovCircle.Enabled then
-		fov.Position = center 
+		fov.Position = mouse 
 		fov.NumSides = FovCircle.NumSides
 		fov.Radius = FovCircle.Radius
 		fov.Transparency = FovCircle.Transparency
