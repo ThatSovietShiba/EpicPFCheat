@@ -396,17 +396,12 @@ local conn1 = uis.InputBegan:Connect(function(i,gp)
 		return
 	end
 	local a = ss.Keybind:find("Mouse") and uit[ss.Keybind] or kc[ss.Keybind]
-	local b = kc[ss.ToggleKey] ~= nil and kc[ss.ToggleKey]
 	if i.UserInputType == a or i.KeyCode == a then
 		if Aimbot.AimType == "Toggle" then
 			ads = not ads
 		else
 			ads = true
 		end
-	elseif i.KeyCode == b then
-		Aimbot.Enabled = not Aimbot.Enabled
-		fov.Visible = Aimbot.Enabled
-		AimAssist.Enabled = not AimAssist.Enabled
 	end
 	if i.UserInputType == mb1 then
 		mousedown = true
