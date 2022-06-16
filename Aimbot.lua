@@ -51,7 +51,7 @@ if not getgenv().AimbotSettings then
 			ClicksPerSecond = 10 -- set this to 0 to get anything higher than 37 cps
 		},
 		Priority = {},
-		Whitelisted = {}, -- Username or User ID
+		Whitelisted = {'Pastehub_test5'}, -- Username or User ID
 		WhitelistFriends = false, -- Automatically adds friends to the whitelist
 		Ignore = {} -- Raycast Ignore
 	}
