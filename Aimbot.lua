@@ -52,7 +52,7 @@ if not getgenv().AimbotSettings then
 		},
 		Priority = {},
 		Whitelisted = {}, -- Username or User ID
-		WhitelistFriends = true, -- Automatically adds friends to the whitelist
+		WhitelistFriends = false, -- Automatically adds friends to the whitelist
 		Ignore = {} -- Raycast Ignore
 	}
 end
