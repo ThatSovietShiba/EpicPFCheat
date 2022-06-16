@@ -15,7 +15,6 @@ if not getgenv().AimbotSettings then
 		IgnoredTransparency = 0.6, -- all parts with a transparency greater than this will be ignored (IgnoreTransparency has to be enabled)
 		RefreshRate = 10, -- how fast the aimbot updates (milliseconds)
 		Keybind = "MouseButton2",
-		ToggleKey = "F4",
 		MaximumDistance = 3000, -- Set this to something lower if you dont wanna lock on some random person across the map
 		AlwaysActive = false,
 		Aimbot = {
@@ -626,9 +625,6 @@ local conn4 = players.PlayerAdded:Connect(function(plr)
 end)
 if typeof(ss.Keybind) == "EnumItem" then
 	ss.Keybind = ss.Keybind.Name
-end
-if typeof(ss.ToggleKey) == "EnumItem" then
-	ss.ToggleKey = ss.ToggleKey.Name
 end
 
 local aimbot = {Version = VERSION}
