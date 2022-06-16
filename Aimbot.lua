@@ -37,7 +37,7 @@ if not getgenv().AimbotSettings then
 			RequireMovement = false
 		},
 		FovCircle = {
-			Enabled = false,
+			Enabled = true,
 			Dynamic = false,
 			Radius = 300,
 			Transparency = 1,
