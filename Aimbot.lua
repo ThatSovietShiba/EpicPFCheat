@@ -15,7 +15,7 @@ if not getgenv().AimbotSettings then
 		IgnoredTransparency = 0.5, -- all parts with a transparency greater than this will be ignored (IgnoreTransparency has to be enabled)
 		RefreshRate = 10, -- how fast the aimbot updates (milliseconds)
 		Keybind = "MouseButton2",
-		ToggleKey = "",
+		ToggleKey = "RightShift",
 		MaximumDistance = 300, -- Set this to something lower if you dont wanna lock on some random person across the map
 		AlwaysActive = false,
 		Aimbot = {
@@ -38,7 +38,7 @@ if not getgenv().AimbotSettings then
 		},
 		FovCircle = {
 			Enabled = true,
-			Dynamic = false,
+			Dynamic = true,
 			Radius = 100,
 			Transparency = 1,
 			Color = Color3.fromRGB(255,255,255),
