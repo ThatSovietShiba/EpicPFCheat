@@ -26,12 +26,12 @@ if not getgenv().AimbotSettings then
 			AimType = "Hold", -- "Hold" or "Toggle"
 		},
 		AimAssist = {
-			Enabled = false,
+			Enabled = true,
 			MinFov = 0,
 			MaxFov = 300,
 			DynamicFov = false,
-			ShowFov = false, -- Shows Min & Max fov
-			Strength = 200, -- 1% - 100%
+			ShowFov = true, -- Shows Min & Max fov
+			Strength = 100, -- 1% - 100%
 			SlowSensitivity = false,
 			SlowFactor = 1.75, -- 1% - 10%
 			RequireMovement = false
