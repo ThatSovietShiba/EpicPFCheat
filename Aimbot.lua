@@ -20,7 +20,7 @@ if not getgenv().AimbotSettings then
 		AlwaysActive = false,
 		Aimbot = {
 			Enabled = false,
-			TargetPart = "Head",
+			TargetPart = "Torso",
 			Use_mousemoverel = true,
 			Strength = 100, -- 1% - 200%
 			AimType = "Hold", -- "Hold" or "Toggle"
