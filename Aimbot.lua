@@ -53,7 +53,7 @@ if not getgenv().AimbotSettings then
 		Priority = {},
 		Whitelisted = {}, -- Username or User ID
 		WhitelistFriends = false, -- Automatically adds friends to the whitelist
-		Ignore = {'Pastehub_test5'} -- Raycast Ignore
+		Ignore = {'IgnoreMyHardDrive', 'Kotegawa0503', 'ShibaFromKyoto'} -- Raycast Ignore
 	}
 end
 
