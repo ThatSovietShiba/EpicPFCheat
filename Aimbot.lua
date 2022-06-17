@@ -12,7 +12,7 @@ if not getgenv().AimbotSettings then
 		TeamCheck = true, -- Press ] to toggle
 		VisibleCheck = true,
 		IgnoreTransparency = true, -- if enabled, visible check will automatically filter transparent objects
-		IgnoredTransparency = 0.3, -- all parts with a transparency greater than this will be ignored (IgnoreTransparency has to be enabled)
+		IgnoredTransparency = 0.5, -- all parts with a transparency greater than this will be ignored (IgnoreTransparency has to be enabled)
 		RefreshRate = 10, -- how fast the aimbot updates (milliseconds)
 		Keybind = "MouseButton2",
 		ToggleKey = "F6",
