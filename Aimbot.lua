@@ -14,7 +14,7 @@ if not getgenv().AimbotSettings then
 		IgnoreTransparency = true, -- if enabled, visible check will automatically filter transparent objects
 		IgnoredTransparency = 0.6, -- all parts with a transparency greater than this will be ignored (IgnoreTransparency has to be enabled)
 		RefreshRate = 10, -- how fast the aimbot updates (milliseconds)
-		Keybind = "MouseButton2",
+		Keybind = "MB2",
 		ToggleKey = "F6",
 		MaximumDistance = 3000, -- Set this to something lower if you dont wanna lock on some random person across the map
 		AlwaysActive = false,
