@@ -60,13 +60,13 @@ end
 if not AimbotSettings.IgnoredTransparency then
 	local bind = Instance.new("BindableFunction")
 	bind.OnInvoke = function()
-		setclipboard("https://pastebin.com/raw/nwqE7v07")
+		setclipboard("")
 	end
 	game:GetService("StarterGui"):SetCore("SendNotification",{
-		Title = "Universal Aimbot",
-		Text = "Please update your script!",
+		Title = "PastedHub",
+		Text = "Send This To The DevS!",
 		Duration = 5,
-		Button1 = "Get Latest Script",
+		Button1 = "Join The Discord",
 		Callback = bind
 	})
 	return
