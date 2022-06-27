@@ -16,11 +16,7 @@ if(_G.Enabled == true) then
                     end
                     if(_G.Kick == false) and (_G.Notify == true) then
                         print(playerlist[i].." Joined at ".." ,at: "..Time.hour..":"..Time.min.."")
-                        game.StarterGui:SetCore("SendNotification", {
-                            Title = "A Risky Player Joined!";
-                            Text = playerlist[i].." at: "..Time.hour..":"..Time.min.."";
-                            Duration = 7;
-                        })    
+                        Labrary:Notify('A Risky Player Joined:'playerlist[i].." at: "..Time.hour..":"..Time.min.."", 7)    
                         makefolder("PastedHub/PhantomForces/StaffKick")
                         writefile("PastedHub/PhantomForces/StaffKick\\PlayerJoinedLIST.txt",
                             playerlist[i].." joined at "..Time.hour..":"..Time.min
