@@ -1,5 +1,7 @@
 _G.Enabled = false;
 
+_G.CertainPlayer = true; --Set to false if you want it to kick you if anyone joins and true if you want to use playerlist
+
 _G.Kick = true; --If it kicks you or just gives a notification that someone joined
 
 _G.Notify = false;
@@ -10,6 +12,8 @@ if(_G.Enabled == true) then
 
 game:GetService("Players").PlayerAdded:Connect(function(user)
 local Time = os.date("*t")
+
+if(_G.CertainPlayer == true) then
     
 for i = 1, #playerlist do
    
