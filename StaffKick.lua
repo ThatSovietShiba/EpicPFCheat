@@ -1,6 +1,4 @@
-_G.Enabled = true;
-
-_G.CertainPlayer = true; --Set to false if you want it to kick you if anyone joins and true if you want to use playerlist
+_G.Enabled = false;
 
 _G.Kick = false; --If it kicks you or just gives a notification that someone joined
 
@@ -12,8 +10,6 @@ if(_G.Enabled == true) then
 
 game:GetService("Players").PlayerAdded:Connect(function(user)
 local Time = os.date("*t")
-
-if(_G.CertainPlayer == true) then
     
 for i = 1, #playerlist do
    
@@ -30,7 +26,7 @@ Text = playerlist[i].." at "..Time.hour..":"..Time.min.."";
 Duration = 5;
 })    
 makefolder("PastedHub/PhantomForces/StaffKick")
-writefile("PastedHub/PhantomForces/StaffKick\\PlayerJoinedLIST.txt",
+writefile("PastedHub/PhantomForces/StaffKick\\StaffJoinLogs.txt",
 playerlist[i].." joined at "..Time.hour..":"..Time.min
     )
 end
