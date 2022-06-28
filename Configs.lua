@@ -165,20 +165,6 @@ local SaveManager = {} do
 		self.Library = library
 	end
 
-	function SaveManager:LoadAutoloadConfig()
-		if isfile(self.Folder .. '/configs/autoload.txt') then
-			local name = readfile(self.Folder .. '/configs/autoload.txt')
-
-			local success, err = self:Load(name)
-			if not success then
-				return self.Library:Notify('Failed to load autoload config: ' .. err)
-			end
-
-			self.Library:Notify(string.format('Auto loaded config %q', name))
-		end
-	end
-
-
 	function SaveManager:BuildConfigSection(tab)
 		assert(self.Library, 'Must set SaveManager.Library')
 
@@ -227,13 +213,6 @@ local SaveManager = {} do
 
 			self.Library:Notify(string.format('Saved config %q', name))
 		end)
-		
-		section:AddButton('Autoload config', function()
-			local name = Options.SaveManager_ConfigList.Value
-			writefile(self.Folder .. '/configs/autoload.txt', name)
-			SaveManager.AutoloadLabel:SetText('Current autoload config: ' .. name)
-			self.Library:Notify(string.format('Set %q to auto load', name))
-		end)
 
 		section:AddButton('Refresh config list', function()
 			Options.SaveManager_ConfigList.Values = self:RefreshConfigList()
@@ -241,12 +220,6 @@ local SaveManager = {} do
 			Options.SaveManager_ConfigList:SetValue(nil)
 		end)
 
-		SaveManager.AutoloadLabel = section:AddLabel('Current autoload config: none', true)
-
-		if isfile(self.Folder .. '/configs/autoload.txt') then
-			local name = readfile(self.Folder .. '/configs/autoload.txt')
-			SaveManager.AutoloadLabel:SetText('Current autoload config: ' .. name)
-		end
 
 		SaveManager:SetIgnoreIndexes({ 'SaveManager_ConfigList', 'SaveManager_ConfigName' })
 	end
