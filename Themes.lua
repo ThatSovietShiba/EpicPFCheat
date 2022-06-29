@@ -76,20 +76,6 @@ local ThemeManager = {} do
 	end
 
 	function ThemeManager:CreateThemeManager(groupbox)
-		groupbox:AddToggle('WatermarkToggle', {
-    			Text = 'Watermark',
-    			Default = false,
-		})
-		Toggles.WatermarkToggle:OnChanged(function()
-    			if Toggles.WatermarkToggle.Value == true then
-        			Library:SetWatermarkVisibility(true)
-        			WatermarkValue = true
-    			end
-    			if Toggles.WatermarkToggle.Value == false then
-        			Library:SetWatermarkVisibility(false)
-        			WatermarkValue = false
-    			end
-		end)
 		groupbox:AddLabel('Background color'):AddColorPicker('BackgroundColor', { Default = self.Library.BackgroundColor });
 		groupbox:AddLabel('Main color')	:AddColorPicker('MainColor', { Default = self.Library.MainColor });
 		groupbox:AddLabel('Accent color'):AddColorPicker('AccentColor', { Default = self.Library.AccentColor });
