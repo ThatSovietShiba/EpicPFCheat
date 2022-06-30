@@ -435,7 +435,7 @@ fov.NumSides = 64
 fov.Radius = 100
 fov.Filled = false
 
-local fov1,fov2,label1,label2 = Drawingnew("Circle"),Drawingnew("Circle"),Drawingnew("Text"),Drawingnew("Text")
+local fov1,fov2,label2 = Drawingnew("Circle"),Drawingnew("Circle"),Drawingnew("Text"),Drawingnew("Text")
 for _,v in next, {fov1,fov2} do
 	v.Visible = false
 	v.Transparency = 1 
@@ -447,7 +447,7 @@ end
 fov1.Color = Color3fromRGB(255,0,0)
 fov2.Color = Color3fromRGB(0, 0, 255)
 
-for _,v in next, {label1,label2} do
+for _,v in next, {label2} do
 	v.Visible = false
 	v.Transparency = 1
 	v.Size = 32 
@@ -456,8 +456,6 @@ for _,v in next, {label1,label2} do
 	v.OutlineColor = Color3fromRGB(0,0,0)
 	v.Font = Fonts.UI
 end
-label1.Color = Color3.fromRGB(255,255,255)
-label1.Text = "Aim Assist only works when the player is outside the Red circle and inside the Blue circle"
 label2.Color = Color3.fromRGB(255,0,0)
 label2.Text = "You cannot use Aimbot and Aim Assist at the same time!"
 
@@ -465,7 +463,6 @@ function removefov()
 	fov:Remove()
 	fov1:Remove()
 	fov2:Remove()
-	label1:Remove()
 	label2:Remove()
 end
 
@@ -500,7 +497,6 @@ function update()
 	max = (dyn and not ads and max) or (dyn and ads and max / (camera.FieldOfView / 100)) or max
 	fov1.Visible = showfov
 	fov2.Visible = showfov
-	label1.Visible = showfov
 	label2.Visible = bot and assist
 	if showfov then
 		fov1.Position = mouse
@@ -509,7 +505,6 @@ function update()
 		fov2.Position = mouse
 		fov2.Radius = max
 
-		label1.Position = Vector2new(size.X / 2, (size.Y / 2) + max + 10)
 	end
 	if bot and assist then
 		label2.Position = Vector2new(size.X / 2, (size.Y / 2) + max + 42)
