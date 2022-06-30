@@ -34,7 +34,7 @@ if not getgenv().AimbotSettings then
 			Strength = 55, -- 1% - 100%
 			SlowSensitivity = true,
 			SlowFactor = 1.75, -- 1% - 10%
-			RequireMovement = true
+			RequireMovement = false
 		},
 		FovCircle = {
 			Enabled = false,
