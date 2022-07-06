@@ -114,7 +114,7 @@ local ScriptManager = {} do
 		self.Library = library
 	end
 
-	function ScriptManager:BuildConfigSection(tab)
+	function ScriptManager:BuildScriptSection(tab)
 		assert(self.Library, 'Must set ScriptManager.Library')
 
 		local section = tab:AddRightGroupbox('Scripts')
@@ -123,8 +123,8 @@ local ScriptManager = {} do
 
 		section:AddDivider()
 
-		section:AddButton('Refresh config list', function()
-			Options.ScriptManager_ScriptList.Values = self:RefreshConfigList()
+		section:AddButton('Refresh script list', function()
+			Options.ScriptManager_ScriptList.Values = self:RefreshScriptList()
 			Options.ScriptManager_ScriptList:SetValues()
 			Options.ScriptManager_ScriptList:SetValue(nil)
 		end)
